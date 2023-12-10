@@ -1,0 +1,55 @@
+.login {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url("https://plus.unsplash.com/premium_photo-1673288397476-f1e9c3e15a1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0M3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-position: center;
+}
+
+.login-heading {
+  font-weight: 300;
+  border-radius: 20px;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+  border-radius: 20px;
+}
+a#separo {
+  color: blue;
+  margin-left: 20px;
+}
+
+p#Rgistro {
+  position: absolute;
+  top: 20%;
+  left: 190px;
+  color: white;
+  font-weight: 600;
+  font-size: 40px;
+}
+p#rgistro {
+  position: absolute;
+  top: 30%;
+  left: 100px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+#ocultar {
+  display: none;
+}
+
+#mostrar {
+  cursor: pointer;
+}
+
+.login-img {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 100%;
+}

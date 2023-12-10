@@ -1,0 +1,405 @@
+body {
+  background: white;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.contenedor {
+  width: 380px;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0.2);
+  border-radius: 25px;
+  text-align: center;
+  padding: 30px 35px 0 35px;
+}
+
+.contenedor header {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.contenedor .form-princ {
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-princ form {
+  display: flex;
+  width: 550%;
+}
+
+.form-princ form .pagina {
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.form-princ form .pagina .titulo {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0px;
+}
+
+.form-princ form .pagina .campo {
+  position: relative;
+  width: 305px;
+  margin-bottom: 25px;
+}
+
+p#text {
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}
+
+div#div_file {
+  position: relative;
+  margin: 2px;
+  padding: 2px;
+  width: 70px;
+  background-color: #2499e3;
+  border-radius: 10px;
+  align-items: center;
+  margin-left: auto;
+}
+
+input#btn_agregar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+input#btn_agregar1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+div#mover {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  width: 122%;
+  height: calc(100% + 5px);
+  padding: 20px;
+  background: #40cfff;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14 px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: black;
+}
+
+.form-princ form .pagina .campo select {
+  color: #0d0d0d;
+  padding: 20px 15px 20px 60px;
+  width: 100%;
+  border-radius: 25px;
+  border: 0;
+  box-shadow: 0 0 20px rgba(192, 203, 251, 0.7);
+  outline: none;
+  font-size: 16px;
+}
+.input-icon {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 10px;
+  top: 20%;
+  transform: translateY(-55);
+}
+input {
+  color: #0d0d0d;
+  padding: 20px 15px 20px 60px;
+  width: 100%;
+  border-radius: 25px;
+  border: 0;
+  box-shadow: 0 0 20px rgba(192, 203, 251, 0.7);
+  outline: none;
+  font-size: 16px;
+}
+
+.form-princ form .pagina .campo button {
+  padding: 20px;
+  height: calc(100% + 5px);
+  background: #40cfff;
+  box-shadow: 0 0 20px rgba(192, 203, 251, 0.7);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+.form-princ form .pagina .btns button {
+  margin-top: -7px !important;
+}
+
+form .pagina .btns button.volver {
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .pagina .btns button.adelante {
+  margin-left: 3px;
+  font-size: 17px;
+}
+.form-princ form .pagina .campo button:hover {
+  background: black;
+}
+
+.cambio {
+  flex: 1;
+  text-align: left;
+}
+.bino {
+  height: 38px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(64, 207, 255, 1) 25%,
+    rgba(64, 207, 255, 1) 100%
+  );
+  box-shadow: 0 0 20px rgba(192, 203, 251, 0.7);
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.bina {
+  border: none;
+  letter-spacing: 10px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: #0dbff2;
+}
+.section {
+  display: flex;
+  gap: 5px;
+  margin: 15px 0;
+  align-items: center;
+}
+.section span {
+  text-align: left;
+}
+.check-input {
+  display: none;
+}
+.checkbox {
+  width: 25px;
+  height: 25px;
+  border: 2px solid #0dbff2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 3px;
+  transition: 0.3s all;
+}
+.checkbox svg {
+  width: 10px;
+  height: 10px;
+}
+.check-input:checked + .checkbox {
+  background: #26bfbf;
+  border: 2px solid #26bfbf;
+}
+.check-input:checked + .checkbox svg path {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  stroke: #fff;
+  stroke-width: 3;
+  animation: check 4s forwards;
+}
+.checkbox::before {
+  content: "";
+  background: #26bfbf66;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  display: block;
+  width: 60px;
+  height: 60px;
+  z-index: -1;
+}
+.check-input:checked + .checkbox::before {
+  animation: ripple 0.3s;
+}
+@keyframes check {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes ripple {
+  to {
+    transform: scale(1);
+  }
+}
+label {
+  display: flex;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/*Aqui le damos estilo al progres bar*/
+.contenedor .progress-bar {
+  display: flex;
+  margin: 10px 0;
+}
+.contenedor .progress-bar .paso {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.progress-bar .paso .num {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  transition: 0.3s;
+}
+
+.progress-bar .paso .num.active {
+  border-color: black;
+  background: #bababa;
+}
+.progress-bar .paso .num span {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.progress-bar .paso .num.active span {
+  display: none;
+}
+.progress-bar .paso .check {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -99%);
+}
+.progress-bar .paso .check.active {
+  display: block;
+  color: black;
+}
+
+.progress-bar .paso .num::before,
+.progress-bar .paso .num::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 3px;
+  bottom: 11px;
+  right: -46px;
+  background: black;
+}
+.progress-bar .paso:last-child .num::before,
+.progress-bar .paso:last-child .num::after {
+  display: none;
+}
+
+.progress-bar .paso .num.active:after {
+  background: #bababa;
+  animation: mov-Linea 0.3s linear forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+@keyframes mov-Linea {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.ojos {
+  left: 110%;
+  position: absolute;
+  top: 30%;
+  right: 7px;
+  font-size: 20px;
+  color: skyblue;
+}
+.mapa {
+  left: 110%;
+  position: absolute;
+  top: 30%;
+  right: 7px;
+  font-size: 20px;
+  color: skyblue;
+}
+
+#ocultar {
+  display: none;
+}
+
+#mostrar {
+  cursor: pointer;
+}
+/*Estilo para mostrar los mensajes de validacion*/
+
+.error {
+  color: #26bfbf;
+  float: right;
+  text-align: left;
+  
+}
+
+a#bvolver {
+  display: inline-block;
+  background-color: red;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: auto !important;
+  width: auto !important;
+  padding: 5px 10px !important;
+  background: rgba(0,0,0, .4) !important;
+}
+
+.preview-item {
+  position: relative;
+}
